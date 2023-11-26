@@ -3394,15 +3394,16 @@ ul.nostyle i {
     color: #45aed6;
     background-color: transparent;
   }
-  .owl-carousel {
-    height: 300px !important;
+  /* .owl-carousel {
+    height: 650px !important;
   }
   .owl-carousel img{
-    height: 300px !important;
+    height: 650px !important;
   }
   .owl-carousel video{
-    height: 300px !important;
-  }
+    height: 6500px !important;
+    background-size: cover !important;
+  } */
 }
 
 .navbar-logo {
@@ -3420,7 +3421,8 @@ ul.nostyle i {
 
 video{
   width: 100vw;
-  height: 100vh;
+  height: 650px;
+  background-size: cover;
   object-fit: cover;
   position: fixed;
   top: 0;

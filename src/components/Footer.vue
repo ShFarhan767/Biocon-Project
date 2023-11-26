@@ -1,4 +1,33 @@
-<script setup></script>
+<script setup>
+const footerData = {
+    sections: [
+        {
+            title: "Company",
+            link: "#",
+            menuItems: [
+                "About Us",
+                "Contact Us",
+                "Our Services",
+                "Privacy Policy",
+                "Terms & Condition",
+            ],
+        },
+        {
+            title: "Quick Links",
+            link: "#",
+            menuItems: [
+                "About Us",
+                "Contact Us",
+                "Our Services",
+                "Privacy Policy",
+                "Terms & Condition",
+            ],
+        },
+    ],
+};
+
+
+</script>
 
 <template>
     
@@ -6,22 +35,14 @@
     <div class="container-fluid bg-dark text-white-50 footer wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
-                <div class="col-lg-3 col-md-6 footer-title">
-                    <h5 class="text-white mb-4">Company</h5>
-                    <a class="btn btn-link text-white-50" href="">About Us</a>
-                    <a class="btn btn-link text-white-50" href="">Contact Us</a>
-                    <a class="btn btn-link text-white-50" href="">Our Services</a>
-                    <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
-                    <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
+                <div v-for="menu , index in footerData.sections" :key="index" class="col-lg-3 col-md-6 footer-title">
+                    <h5 class="text-white mb-4">{{ menu.title }}</h5>
+
+                    <a v-for="(menuItem, itemIndex) in menu.menuItems" :key="itemIndex" class="btn btn-link text-white-50" :href="menu.link">
+                        {{ menuItem }}
+                    </a>
                 </div>
-                <div class="col-lg-3 col-md-6 footer-title">
-                    <h5 class="text-white mb-4">Quick Links</h5>
-                    <a class="btn btn-link text-white-50" href="">About Us</a>
-                    <a class="btn btn-link text-white-50" href="">Contact Us</a>
-                    <a class="btn btn-link text-white-50" href="">Our Services</a>
-                    <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
-                    <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
-                </div>
+        
                 <div class="col-lg-3 col-md-6 footer-title">
                     <h5 class="text-white mb-4">Contact</h5>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i> South Banasree , Dhaka-1219</p>
