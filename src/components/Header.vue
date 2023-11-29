@@ -24,7 +24,7 @@
                         <li class="scroll">
                             <RouterLink class="nav-link" to="/about">About</RouterLink>
                         </li>
-                        <li class="scroll"><a href="#projects">Projects</a></li>
+                        <li class="scroll"><a href="/project">Projects</a></li>
                         <li class="scroll">
                             <RouterLink class="nav-link" to="/business-segment">Business Segment</RouterLink>
                         </li>
@@ -34,7 +34,7 @@
                         <li class="scroll">
                             <RouterLink class="nav-link" to="/career">Career</RouterLink>
                         </li>
-                        <li class="scroll"><a href="#contact-us">Contact Us</a></li>
+                        <li class="scroll"><a href="/contact">Contact Us</a></li>
                     </ul>
                 </div>
             </div>

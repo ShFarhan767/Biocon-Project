@@ -3931,7 +3931,9 @@ button:active {
 #portfolio .portfolio-item .portfolio-item-inner {
   position: relative;
 }
-
+.portfolio-item-inner img{
+  height: 190px !important;
+}
 #portfolio .portfolio-item .portfolio-item-inner .portfolio-info {
   opacity: 0;
   transition: opacity 400ms;
