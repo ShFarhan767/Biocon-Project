@@ -36,7 +36,9 @@
 	-o-transition: height 500ms ease-in-out;
 	transition: height 500ms ease-in-out;
 }
-	
+.owl-carousel.owl-hidden {
+    /* opacity:0; */
+}
 .owl-carousel .owl-item{
 	float: left;
 }
