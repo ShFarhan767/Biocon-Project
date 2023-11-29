@@ -5,16 +5,29 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'Contact',
-      component: () => import('../views/Contact.vue')
-
+      name: 'home',
+      component: () => import('../views/HomeView.vue')
     },
     {
-      path: '/projects',
-      name: 'projects',
-      component: () => import('../views/projects.vue')
-
-    }
+      path: '/about',
+      name: 'about',
+      component: () => import('../views/AboutView.vue')
+    },
+    {
+      path: '/business-segment',
+      name: 'business segment',
+      component: () => import('../views/BusinessSegmentView.vue')
+    },
+    {
+      path: '/corporate',
+      name: 'corporate',
+      component: () => import('../views/CorporateView.vue')
+    },
+    {
+      path: '/career',
+      name: 'career',
+      component: () => import('../views/CareerView.vue')
+    },
   ]
 })
 
