@@ -19,12 +19,14 @@
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li class="scroll active">
-                            <RouterLink class="nav-link" to="/">Home</RouterLink>
+                            <a class="nav-link" href="/">Home</a>
                         </li> 
                         <li class="scroll">
                             <RouterLink class="nav-link" to="/about">About</RouterLink>
                         </li>
-                        <li class="scroll"><a href="/project">Projects</a></li>
+                        <li class="scroll">
+                            <RouterLink class="nav-link" to="/project">Project</RouterLink>
+                        </li>
                         <li class="scroll">
                             <RouterLink class="nav-link" to="/business-segment">Business Segment</RouterLink>
                         </li>
@@ -34,7 +36,9 @@
                         <li class="scroll">
                             <RouterLink class="nav-link" to="/career">Career</RouterLink>
                         </li>
-                        <li class="scroll"><a href="/contact">Contact Us</a></li>
+                        <li class="scroll">
+                            <RouterLink class="nav-link" to="/contact">Contact</RouterLink>
+                        </li>
                     </ul>
                 </div>
             </div>
