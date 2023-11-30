@@ -52,7 +52,7 @@
 		</div>
 	</div>
 
-	<div class="fh5co-cta" style="background-image: url(../../image/business/business-footer-bg.jpeg);">
+	<div class="fh5co-cta">
 		<div class="overlay"></div>
 
 		<div class="container">
@@ -65,3 +65,9 @@
 	</div>
 
 </template>
+
+<style scoped>
+.fh5co-cta{
+	background-image: url(../../image/business/business-footer-bg.jpeg);
+}
+</style>
