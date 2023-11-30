@@ -4,7 +4,7 @@
     
     <section id="about"> <!-- start about section -->
 
-        <div class="fh5co-page-title" style="background-image: url(../../image/about/about-us-title-img.jpg);background-size: cover; top: -20px; height: 150px;">
+        <div class="fh5co-page-title">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row">

@@ -52,7 +52,8 @@ $(document).ready(function(){
                     </div>
                 </div>
             </div><!-- item-->
-            <div class="item"  style="background-image: url(../../image/slider/bg2.jpg);">
+            <div class="item">
+                <img src="../../image/slider/bg2.jpg">
                 <div class="slider-inner">
                     <div class="container">
                         <div class="row">

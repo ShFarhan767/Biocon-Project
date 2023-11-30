@@ -1590,6 +1590,7 @@ figure {
   background-position: center center;
   background-attachment: fixed;
   padding: 7em 0;
+  background-image: url(../../image/about/about-us-title-img.jpg);background-size: cover; top: -20px; height: 150px;
   position: relative;
 }
 
