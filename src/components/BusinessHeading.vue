@@ -2,7 +2,7 @@
 
 <template>
     
-    <div class="fh5co-page-title" style="background-image: url(../../image/business/business-m.avif);background-size: cover; top: -20px; height: 150px;">
+    <div class="fh5co-page-title">
 		<div class="overlay"></div>
 			<div class="container">
 				<div class="row">
@@ -14,3 +14,12 @@
 	</div>
 
 </template>
+
+<style scoped>
+.fh5co-page-title{
+	background-image: url(../../image/business/business-m.avif);
+	background-size: cover;
+	top: -20px; 
+	height: 150px;
+}
+</style>
