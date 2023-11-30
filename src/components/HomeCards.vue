@@ -11,7 +11,7 @@
                 <div class="wrap">
 
                     <div class="top-grid">
-                        <a href="#"><img src="image/icon1.png" title="icon-name"></a>
+                        <a href="#"><img src="../../image/icon1.png" title="icon-name"></a>
                         <h3>Project Features</h3>
                         <p><i class="fas fa-arrow-right"></i>   
                             প্রকল্পের চারপাশে ৩ কি:মি: দীর্ঘ প্রাকৃতিক লেক ও সবুজ বৃক্ষরাজি ঘেরা মনোমুগ্দকর পরিকল্পিত আধুনিক শহর।
@@ -42,7 +42,7 @@
                     </div>
 
                     <div class="top-grid">
-                        <a href="#"><img src="image/icon2.png" title="icon-name"></a>
+                        <a href="#"><img src="../../image/icon2.png" title="icon-name"></a>
                         <h3>Developments</h3>
                         <p><i class="fas fa-arrow-right"></i>  
                             Safa Green City সম্পূর্ণ রাজউক ও সরকারী উন্নয়ন নীতিমালা অনূযায়ী পরিকল্পিত একটি আবাসন প্রকল্প ।
@@ -77,7 +77,7 @@
 
 
                     <div class="top-grid last-topgrid">
-                        <a href="#"><img src="image/icon3.png" title="icon-name"></a>
+                        <a href="#"><img src="../../image/icon3.png" title="icon-name"></a>
                         <h3>Location</h3>
                         <p>
                             <i class="fas fa-arrow-right"></i>  রায়ের বাজার বুদ্বিজীবি স্মৃতিসৌধ থেকে ৪ কি:মি: এবং শহীদ বুদ্বিজীবী সেতু (বছিলা ব্রীজ) থেকে ৩ কি:মি: পচ্শিমে অবস্হিত।
