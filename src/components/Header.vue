@@ -19,7 +19,7 @@
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li class="scroll active">
-                            <a class="nav-link" href="/">Home</a>
+                            <RouterLink class="nav-link" to="/">Home</RouterLink>
                         </li> 
                         <li class="scroll">
                             <RouterLink class="nav-link" to="/about">About</RouterLink>

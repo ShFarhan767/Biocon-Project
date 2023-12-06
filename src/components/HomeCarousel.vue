@@ -1,76 +1,74 @@
-<script setup>
+<script>
+import Swiper from '../../node_modules/swiper/swiper-bundle';
 
-$(document).ready(function(){
-    $('.owl-carousel').owlCarousel({
-        items: 1,
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 8000, // Set the autoplay speed in milliseconds
-        autoplayHoverPause: true // Pause autoplay when hovering over the carousel
-        // Add more options as needed
+
+export default {
+  mounted() {
+    this.$nextTick(() => {
+      // Initialize Swiper when the component is mounted
+      this.swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        autoplay: {
+          delay: 8000,
+          disableOnInteraction: false,
+        },
+        loop: true, // Enable continuous loop
+      });
     });
-});
-
-
+  },
+  beforeDestroy() {
+    // Destroy Swiper when the component is destroyed to avoid memory leaks
+    if (this.swiper) {
+      this.swiper.destroy();
+      this.swiper = null;
+    }
+  },
+};
 </script>
 
 <template>
     
     <section id="main-slider">
-        <div class="owl-carousel">
-            <div class="item">
-                <div class="video-container">
-                    <video autoplay muted loop id="myVideo" style="background-size: cover !important;">
-                        <source src="../../image/slider/Construction Company Website Template.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="slider-inner">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="carousel-content">
-                                    <h2><span>Lively</span> Ambience</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- /.item -->
-            <div class="item">
-                <img src="../../image/slider/bg1.jpg">
-                <div class="slider-inner">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="carousel-content">
-                                    <h2><span>Simply</span> Amazing Theme</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- item-->
-            <div class="item">
-                <img src="../../image/slider/bg2.jpg">
-                <div class="slider-inner">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="carousel-content">
-                                    <h2><span>Simply</span> Amazing Theme</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- item -->
 
-        </div><!--/ carousel -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Your slides go here -->
+                <div class="swiper-slide">
+                    
+                    <div class="item">
+                        <img src="../../image/slider/bg1.jpg">
+                    </div><!-- item-->
+
+                </div>
+                <div class="swiper-slide">
+
+                    <div class="item">
+                        <img src="../../image/slider/bg2.jpg">
+                    </div>
+                    <!-- item -->
+
+                </div>
+                <div class="swiper-slide">
+
+                    <div class="item">
+                        <div class="video-container">
+                            <video autoplay muted loop id="myVideo" style="background-size: cover !important;">
+                                <source src="../../image/slider/Construction Company Website Template.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <!-- item -->
+
+                </div>
+                <!-- Add more slides as needed -->
+            </div>
+
+        </div>
     </section><!--/ main-slider section end/-->
 
 
 </template>
+
+<style scoped>
+ @import '../../node_modules/swiper/swiper-bundle.css';
+</style>
