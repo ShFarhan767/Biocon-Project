@@ -56,12 +56,8 @@ const footerData = {
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 footer-title">
-                    <h5 class="text-white mb-4">Newsletter</h5>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
+                    <h5 class="text-white mb-4">Our Project</h5>
+                    <img src="../../image/25c50a6c-11ee-452b-a6a3-2b9fc3190df3.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -88,3 +84,11 @@ const footerData = {
     <!-- Footer End -->
 
 </template>
+
+<style>
+.footer-title img{
+    width: 100%;
+    border: 3px solid #100d74;
+    height: 200px;
+}
+</style>
