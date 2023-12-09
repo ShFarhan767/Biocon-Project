@@ -12,7 +12,7 @@
 
     </section><!--/#contact-us-->
 
-    <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=1258&amp;height=400&amp;hl=en&amp;q=Safa Green City&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://connectionsgame.org/">Connections NYT</a></div></div>
+    <div class="mapouter"><div class="gmap_canvas"> <iframe class="gmap_iframe" width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.246303264255!2d90.3155233753356!3d23.738594678678435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bfc005d6171d%3A0x52d247c0db1d4ac3!2z4Ka44Ka-4Kar4Ka-IOCml-CnjeCmsOCngOCmqCDgprjgpr_gpp_gpr8!5e0!3m2!1sbn!2sbd!4v1702105635782!5m2!1sbn!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><a href="https://connectionsgame.org/">Connections NYT</a></div></div>
 
 </template>
 

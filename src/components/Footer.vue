@@ -45,9 +45,9 @@ const footerData = {
         
                 <div class="col-lg-3 col-md-6 footer-title">
                     <h5 class="text-white mb-4">Contact</h5>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i> South Banasree , Dhaka-1219</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i> +88028100024</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i> info@bioconbd.com</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>  3/13 (1st Floor), Block# F, Lalmatia, Mohammadpur, Dhaka-1207.</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i> 01967 666 441</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i> bioconbd2012@gmail.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -81,6 +81,7 @@ const footerData = {
             </div>
         </div>
     </div>
+
     <!-- Footer End -->
 
 </template>

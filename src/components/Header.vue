@@ -58,7 +58,7 @@
  @media all and (min-width: 320px) and (max-width: 780px) {
     .navbar-header img {
     width: 90%;
-    margin-top: -65px;
+    margin-top: -5px;
 }
  }
 </style>
