@@ -19,14 +19,9 @@ const router = createRouter({
       component: () => import('../views/ProjectView.vue')
     },
     {
-      path: '/business-segment',
-      name: 'business segment',
-      component: () => import('../views/BusinessSegmentView.vue')
-    },
-    {
-      path: '/corporate',
-      name: 'corporate',
-      component: () => import('../views/CorporateView.vue')
+      path: '/Gallery',
+      name: 'Gallery',
+      component: () => import('../views/Galleryview.vue')
     },
     {
       path: '/career',

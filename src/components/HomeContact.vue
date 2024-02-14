@@ -32,4 +32,25 @@
 .gmap_iframe {
     height:400px!important;
 }
+#contact-us{
+    padding: 45px 0 50px;
+    background: #02a89c;
+    color: black;
+    font-size: 18px;
+}
+#contact-us h2 {
+    color: #303093;
+    font-size: 50px;
+    font-weight: 600;
+}
+.section-header .section-title:before {
+    content: "";
+    position: absolute;
+    width: 235px;
+    bottom: 0;
+    left: 46%;
+    margin-left: -70px;
+    height: 3px;
+    background: #fff;
+}
 </style>

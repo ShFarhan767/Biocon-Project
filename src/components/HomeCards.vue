@@ -114,3 +114,22 @@
     </section>  <!-- / end card section /-->
 
 </template>
+
+<style scoped>
+.Card-button {
+    color: black;
+    font-size: 0.875em;
+    text-transform: uppercase;
+    border: 1px solid #EEE;
+    border-radius: 6px;
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    background: #0c8f87;
+}
+@media only screen and (max-width: 768px){
+    .Cards {
+    height: 1030px;
+    }
+}
+</style>

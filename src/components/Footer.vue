@@ -55,8 +55,7 @@ const footerData = {
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 footer-title">
-                    <h5 class="text-white mb-4">Our Project</h5>
+                <div class="col-lg-3 col-md-6 footer-title"> <h5 class="text-white mb-4">Our Project</h5>
                     <img src="../../image/25c50a6c-11ee-452b-a6a3-2b9fc3190df3.jpg" alt="">
                 </div>
             </div>

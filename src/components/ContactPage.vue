@@ -30,7 +30,7 @@
                                             <br><span style="margin-left: 35px;">info@bioconbd.com</span> </li>
                                     </div>
                                     <div class="col-md-12">
-                                        <li> <a href="#"><i class="fa-solid fa-location-dot"></i> </a> <span style="color: #4CB648; font-size: 22px;">Address </span> <br> <span style="margin-left: 35px;">  3/13 (1st Floor), Block# F, Lalmatia, Mohammadpur,Dhaka-1207</span></li>
+                                        <li> <a href="#"><i class="fa-solid fa-location-dot"></i> </a> <span style="color: #4CB648; font-size: 22px;">Office Address </span> <br> <span style="margin-left: 35px;">  3/13 (1st Floor), Block# F, Lalmatia, Mohammadpur,Dhaka-1207</span></li>
                                     </div>
                                 </ul>
                         </div>
@@ -113,11 +113,10 @@ button{
 }
 .list-box{
     width: 100%;
-    margin: 25px;
     border-radius: 5px;
-    height: 195px;
-    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.4);
-    background: #fff;
+    height: 210px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 16px;
+    background: rgb(255, 255, 255);
 }
 .list-box ul{
     margin: 15px;
@@ -141,12 +140,12 @@ button{
     color: #564fab;
 }
 .map-area{
+    margin-top: 25px;
     width: 100%;
     height: 310px;
-    margin: 25px;
     border-radius: 10px;
-    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.4);
-    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 16px;
+    background: rgb(255, 255, 255);
 }
 .gmap_iframe{
     width: 100%;
@@ -160,8 +159,8 @@ button{
 .form-check-label{
     margin-left: -5px;
 }
-textarea.form-control {
-    height: auto;
+textarea.form-control{
+    height: 65px;
     width: 85%;
     margin-left: 33px;
 }
@@ -215,13 +214,12 @@ textarea::placeholder{
 }
 
 @media all and (min-width: 320px) and (max-width: 780px) {
-    .list-box[data-v-ddc399f4] {
+.list-box{
     width: 100%;
-    margin-left: 1px;
     border-radius: 5px;
-    height: 245px;
-    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.4);
-    background: #fff;
+    height: 320px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 16px;
+    background: rgb(255, 255, 255);
 }
 .list-box ul li[data-v-ddc399f4] {
     color: #100d74;
@@ -231,22 +229,20 @@ textarea::placeholder{
     font-size: 12px;
     float: left;
 }
-.map-area[data-v-ddc399f4] {
+.map-area{
+    margin-top: 25px;
     width: 100%;
     height: 310px;
-    margin: 1px;
     border-radius: 10px;
-    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.4);
-    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 16px;
+    background: rgb(255, 255, 255);
 }
-.contactArea[data-v-ddc399f4] {
-    z-index: 10;
+.contactArea{
     border-radius: 20px;
-    width: 85%;
-    margin-left: 40px;
-    margin-top: 50px;
-    margin: 20px;
-    height: 395px;
+    width: 90%;
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 400px;
     padding: 0px 0px;
     background-image: linear-gradient(to right top, #ff726b, #ff8a5b, #ffa64e, #ffc248, #f4de4e);
 }
@@ -256,10 +252,10 @@ textarea::placeholder{
     margin-top: 17px !important;
     padding: 0px 0px;
 }
-textarea.form-control[data-v-ddc399f4] {
-    height: 60px;
+textarea.form-control{
+    height: 65px;
     width: 75%;
-    margin-left: 29px;
+    margin-left: 33px;
 }
 button[data-v-ddc399f4] {
     border: 2px solid #97e5a9;
@@ -269,7 +265,7 @@ button[data-v-ddc399f4] {
     font-size: 20px;
     font-weight: 500;
     padding: 5px 50px;
-    margin-left: 19%;
+    margin-left: 27%;
 }
 } 
 </style>

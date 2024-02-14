@@ -87,3 +87,8 @@
     </section><!--/#pricing-->
 
 </template>
+<style scoped>
+    #pricing {
+    padding: 0px 0 70px;
+}
+</style>

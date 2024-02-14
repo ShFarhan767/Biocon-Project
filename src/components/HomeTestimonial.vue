@@ -11,14 +11,14 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <p><img class="img-thumbnail" src="../../image/images/pic1.jpg" alt=""></p>
-                                <h4>John Deo</h4> 
-                                <p>Fusce non fermentum mi. Praesent vel lobortis elit. Nulla sodales, risus quis sollicitudin iaculis, felis dolor aliquet purus, eget elementum velit nunc eu dolor. Curabitur elit tellus.</p>
+                                <p><img class="img-thumbnail" src="../../image/3-5-katha-commercial-plot.png" alt=""></p>
+                                <h4>3-5 = Katha</h4> 
+                                <p>3-5 katha, Under Development Residential Plot for Sale at Keraniganj</p>
                             </div>
                             <div class="item">
-                                <p><img class="img-thumbnail" src="../../image/images/pic2.jpg" alt=""></p>
-                                <h4>Gramth Larry</h4> 
-                                <p>Fusce non fermentum mi. Praesent vel lobortis elit. Nulla sodales, risus quis sollicitudin iaculis, felis dolor aliquet purus, eget elementum velit nunc eu dolor. Curabitur elit tellus, dictu.</p>
+                                <p><img class="img-thumbnail" src="../../image/3-5-katha-residential-plot.png" alt=""></p>
+                                <h4>Residential-plot</h4> 
+                                <p>3 katha, Under Development Residential Plot for Sale at Keraniganj</p>
                             </div>
                         </div>
 
@@ -40,3 +40,21 @@
     </section><!--/#testimonial-->
 
 </template>
+
+<style scoped>
+    #testimonial {
+    background: #232323;
+    background-size: cover;
+    padding: 20px 0;
+    color: #fff;
+}
+.btn.btn-primary {
+    background: transparent;
+    color: #000000;
+    padding: 5px 35px;
+    border: 1px solid #7b8875;
+    border-radius: 5px;
+    background: #16c1b9;
+    margin-top: 15px;
+}
+</style>

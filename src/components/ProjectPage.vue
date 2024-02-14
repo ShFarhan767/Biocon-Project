@@ -1,17 +1,28 @@
 <script setup>
+$(document).ready(function () {
 
-const ProjectData = {
-    Title: 'Project',
-    titledescription:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper aliquam quis mattis quam.',
-    image1: 'https://ditlbd.com/wp-content/uploads/2015/02/Completed-Construction-03.jpg',
-    image2: 'https://aastitvastore.com/wp-content/uploads/2021/06/moden-elevation-259-1400x788.jpg',
-    image3:'https://i.ebayimg.com/images/g/7OsAAOSwxPBh4Dta/s-l400.jpg',
-    image4:'https://i.pinimg.com/474x/7b/54/e5/7b54e51e36b56dc037c85ab9d43c74ed.jpg',
-    image5:'https://aastitvastore.com/wp-content/uploads/2021/06/moden-elevation-259-1400x788.jpg',
-    image6:'https://sp-ao.shortpixel.ai/client/to_auto,q_lossless,ret_img,w_770,h_433/https://www.orientbell.com/blog/wp-content/uploads/2023/01/Single-Floor-Normal-House-Front-Elevation-Designs.jpg',
-    image7:'https://i.ebayimg.com/images/g/ZPcAAOSwnc1h4Dte/s-l1200.jpg',
-    image8:'https://aastitvastore.com/wp-content/uploads/2021/06/moden-elevation-259-1400x788.jpg'
-}
+    $(".filter-button").click(function () {
+        var value = $(this).attr('data-filter');
+
+        if (value == "all") {
+            //$('.filter').removeClass('hidden');
+            $('.filter').show('1000');
+        }
+        else {
+            //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+            //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.' + value).hide('3000');
+            $('.filter').filter('.' + value).show('3000');
+
+        }
+    });
+
+    if ($(".filter-button").removeClass("active")) {
+        $(this).removeClass("active");
+    }
+    $(this).addClass("active");
+
+});
 </script>
 
 <template>
@@ -27,121 +38,181 @@ const ProjectData = {
 		</div>
 	</div>
 
-
-    <section id="portfolio">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">{{ ProjectData.Title }}</h2>
-                <p class="text-center wow fadeInDown">{{ ProjectData.titledescription }}</p>
-            </div>
-            <div class="text-center">
-                <ul class="portfolio-filter">
-                    <li><a class="active" href="#" data-filter="*">Show All</a></li>
-                    <li><a href="#" data-filter=".designing">3 Katha</a></li>
-                    <li><a href="#" data-filter=".mobile">5 Katha</a></li>
-                </ul>
-                <!--/#portfolio-filter-->
-            </div>
-            <div class="portfolio-items">
-                <div class="portfolio-item designing">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" :src="ProjectData.image1" alt="">
-                        <div class="portfolio-info">
-                            <a class="preview" :href="ProjectData.image1" rel="prettyPhoto">
-                                <i class="fa fa-search"></i>
-                            </a>
-                        </div>
-                    </div>
+            <div class="row">
+                <div align="center">
+                    <button class="btn btn-default filter-button" data-filter="all">All</button>
+                    <button class="btn btn-default filter-button" data-filter="hdpe">3 Katha</button>
+                    <button class="btn btn-default filter-button" data-filter="sprinkle">5 katha</button>
+                    <button class="btn btn-default filter-button" data-filter="7-katha">7 katha</button>
+                    <button class="btn btn-default filter-button" data-filter="10-katha">10 katha</button>
                 </div>
-                <!--/.portfolio-item-->
-                <div class="portfolio-item mobile development">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" :src="ProjectData.image2" alt="">
-                        <div class="portfolio-info">
-                            <a class="preview" :href="ProjectData.image2" rel="prettyPhoto">
-                                <i class="fa fa-search"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!--/.portfolio-item-->
-                <div class="portfolio-item designing">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" :src="ProjectData.image3" alt="">
-                        <div class="portfolio-info">
-                            <a class="preview" :href="ProjectData.image3" rel="prettyPhoto">
-                                <i class="fa fa-search"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!--/.portfolio-item-->
-                <div class="portfolio-item mobile">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" :src="ProjectData.image4" alt="">
-                        <div class="portfolio-info">
-                            <a class="preview" :href="ProjectData.image4" rel="prettyPhoto">
-                                <i class="fa fa-search"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!--/.portfolio-item-->
-                <div class="portfolio-item designing development">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" :src="ProjectData.image5" alt="">
-                        <div class="portfolio-info">
-                            <a class="preview" :href="ProjectData.image5" rel="prettyPhoto">
-                                <i class="fa fa-search"></i>
-                                </a>
-                        </div>
-                    </div>
-                </div>
-                <!--/.portfolio-item-->
-                <div class="portfolio-item mobile">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" :src="ProjectData.image6" alt="">
-                        <div class="portfolio-info">
-                            <a class="preview" :href="ProjectData.image6" rel="prettyPhoto">
-                                <i class="fa fa-search"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!--/.portfolio-item-->
-                <div class="portfolio-item designing development">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" :src="ProjectData.image7" alt="">
-                        <div class="portfolio-info">
-                            <a class="preview" :href="ProjectData.image7" rel="prettyPhoto">
-                                <i class="fa fa-search"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!--/.portfolio-item-->
-                <div class="portfolio-item mobile">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" :src="ProjectData.image8" alt="">
-                        <div class="portfolio-info">
-                            <a class="preview" :href="ProjectData.image8" rel="prettyPhoto">
-                                <i class="fa fa-search"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div><!--/.portfolio-item-->
-            </div>
+                <br />
 
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                    <img src="../../image/467a95003f075cd56e06ce6d20720b51.jpg" class="img-responsive">
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter 10-katha">
+                    <img src="../../image/0192020_3-katha-land-for-sale-in-gazipur.jpeg" class="img-responsive">
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter 7-katha">
+                    <img src="../../image/sunvalley-abashon-photo-gallery-thumb-16.jpg" class="img-responsive">
+                </div>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                    <img src="../../image/593f0f83ae52b75663d9c88ae96787d4.jpg" class="img-responsive">
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter 7-katha">
+                    <img src="../../image/professional-management.jpg" class="img-responsive">
+                </div>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                    <img src="../../image/b.jpg" class="img-responsive">
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter 7-katha">
+                    <img src="../../image/1803ac738b3f2f0691bdd7b550b4743f.jpeg" class="img-responsive">
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                    <img src="../../image/e4461bd84991eff58199618793570ffe.jpg" class="img-responsive">
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter 10-katha">
+                    <img src="../../image/0190837_plot-at-purbachal-land-project-navana-highland.jpeg" class="img-responsive">
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter 7-katha">
+                    <img src="../../image/sunvalley-abashon-photo-gallery-7.jpg"
+                        class="img-responsive">
+                </div>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                    <img src="../../image/cheap-price-plot-in-Bashundhara-Residential-Area-Red-Bricks-BD-525x328.jpg"
+                        class="img-responsive">
+                </div>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter 7-katha">
+                    <img src="../../image/cheap-price-plot-in-Bashundhara-Residential-Area-Red-Bricks-BD-525x328.jpg"
+                        class="img-responsive">
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                    <img src="../../image/plot-price-in-baridhara-bashundhara-housing-project.webp" class="img-responsive">
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                    <img src="../../image/commercial-plots-in-purbachal.jpg" class="img-responsive">
+                </div>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter 10-katha">
+                    <img src="../../image/0181391_land-for-sale-at-purbachal-marine-city.jpeg" class="img-responsive">
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                    <img src="../../image/fff29f19c3215f9d2c1f0aef157a5369.jpg" class="img-responsive">
+                </div>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter 10-katha">
+                    <img src="../../image/415967680M-1680591782036.webp" class="img-responsive">
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                    <img src="../../image/7c134778-03be-4780-9cc6-38f4192b9abe-525x328.jpg" class="img-responsive">
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                    <img src="../../image/project-bg.jpeg" class="img-responsive">
+                </div>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter 10-katha">
+                    <img src="../../image/321729931_712203493865186_1251311082900962360_n.jpg" class="img-responsive">
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                    <img src="../../image/e978864c48627c2dce53fc92e595ea09.jpg" class="img-responsive">
+                </div>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter 7-katha">
+                    <img src="../../image/76c52bf9b294c55a8f246d6d78f8facd.jpeg" class="img-responsive">
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                    <img src="../../image/9ffacc67bee7d7cc1cfa26d82aa89332.jpg" class="img-responsive">
+                </div>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter 10-katha">
+                    <img src="../../image/45588447_705082059869196_7815960551590199296_n.jpg" class="img-responsive">
+                </div>
+            </div>
         </div>
-    </section>
-
 </template>
 
 <style scoped>
+.animate-box span{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
 .fh5co-page-title{
 	background-image: url(../../image/project-bg.jpeg);
 	background-size: cover;
 	top: -20px; 
 	height: 150px;
+}
+.img-responsive {
+    display: block;
+    height: 200px;
+    width: 100%;
+}
+
+.gallery-title {
+    font-size: 36px;
+    color: #42B32F;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
+
+.filter-button {
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #42B32F;
+    margin-bottom: 30px;
+
+}
+
+.filter-button:hover {
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #42B32F;
+
+}
+
+.btn-default:active .filter-button:active {
+    background-color: #42B32F;
+    color: white;
+}
+
+.port-image {
+    width: 100%;
+}
+
+.gallery_product {
+    margin-bottom: 15px;
+    margin: -7px;
+    margin-bottom: 20px;
+}
+.row {
+    margin-right: -15px;
+    margin-left: 25px;
 }
 </style>
